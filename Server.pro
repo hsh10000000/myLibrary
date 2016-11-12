@@ -5,6 +5,8 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += sql
+QT       += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -18,3 +20,9 @@ SOURCES += main.cpp\
 HEADERS  += server.h
 
 FORMS    += server.ui
+
+RESOURCES += \
+    pics.qrc
+
+DISTFILES += \
+    config.ini
